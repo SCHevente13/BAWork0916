@@ -17,5 +17,9 @@ namespace ConsoleApp3
             OriginalPrice = originalPrice;
             SalePrice = originalPrice * (salePercentage / 100);
         }
+        public override string ToString()
+        {
+            return $"Name: {Name} | Original Price: {OriginalPrice} | Sale Price: {SalePrice}";
+        }
     }
 }

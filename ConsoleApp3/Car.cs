@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ConsoleApp3
 {
@@ -18,6 +19,10 @@ namespace ConsoleApp3
             Type = type;
             Year = year;
             Age = 2026 - year;
+        }
+        public override string ToString()
+        {
+            return $"Brand: {Brand} | Type: {Type} | Year mad in: {Year} | Age: {Age}";
         }
     }
 }

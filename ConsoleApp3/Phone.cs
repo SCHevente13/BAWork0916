@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ConsoleApp3
 {
@@ -23,6 +24,10 @@ namespace ConsoleApp3
             Brand = brand;
             Type = type;
             Price = price;
+        }
+        public override string ToString()
+        {
+            return $"Brand: {Brand} | Type: {Type} | Price: {Price} Ft";
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ConsoleApp3
 {
@@ -10,19 +11,23 @@ namespace ConsoleApp3
     {
         public string Title { get; set; }
         public double Rating { get; set; }
-        public bool Recomended { get; set; }
+        public bool Recommended { get; set; }
         public Film(string title, double rating)
         {
             Title = title; 
             Rating = rating;
             if (rating >= 7)
             {
-                Recomended = true;
+                Recommended = true;
             }
             else
             {
-                Recomended = false;
+                Recommended = false;
             }
+        }
+        public override string ToString()
+        {
+            return $"Title: {Title} | Rating: {Rating} | Recommended: {Recommended}";
         }
     }
 }

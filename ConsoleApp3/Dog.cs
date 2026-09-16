@@ -17,5 +17,9 @@ namespace ConsoleApp3
             Breed = breed;
             Age = age;
         }
+        public override string ToString()
+        {
+            return $"Name: {Name} | Breed: {Breed} | Age: {Age}";
+        }
     }
 }
