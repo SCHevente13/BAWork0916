@@ -18,5 +18,9 @@ namespace ConsoleApp3
             Class = data[1];
             Point = int.Parse(data[2]);
         }
+        public override string ToString()
+        {
+            return $"Name: {Name} | Class: {Class} | Point: {Point}";
+        }
     }
 }

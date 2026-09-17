@@ -23,5 +23,9 @@ namespace ConsoleApp3
             Level = level;
             Point = point;
         }
+        public override string ToString()
+        {
+            return $"Name: {Name} | Level: {Level} | Point: {Point}";
+        }
     }
 }
